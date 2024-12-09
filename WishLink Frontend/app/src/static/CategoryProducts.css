@@ -1,0 +1,32 @@
+/* CategoryProducts.css */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 16px; /* Add padding around the container */
+  }
+  
+  .products-container .card {
+    margin: 8px; /* Margin around each card */
+    flex: 1 1 200px; /* Flex properties to ensure responsiveness */
+    max-width: 220px; /* Set a maximum width for cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .category-name{
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  @media (max-width: 500px) {
+    .products-container {
+      gap: 12px; /* Adjust gap for smaller screens */
+    }
+  
+    .products-container .card {
+      flex: 1 1 150px; /* Adjust card size for smaller screens */
+      max-width: 150px; /* Adjust maximum width for smaller screens */
+    }
+  }
+  

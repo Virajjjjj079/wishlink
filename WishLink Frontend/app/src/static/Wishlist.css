@@ -1,0 +1,117 @@
+/* .card-container {
+   
+    margin-top: 10vmin;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 45px;
+    justify-content: center;
+
+    
+  }
+
+  .wishlist{
+    width: 100vw;
+  }
+
+  .addProduct {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #F13AB1;
+    color: white;
+    padding: 10px;
+    border-radius: 0.2rem;
+    z-index: 1000;
+  }
+
+  @media (max-width:500px){
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+  } */
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 16px; /* Add padding around the container */
+    margin-top: 10vmin; /* Margin at the top of the container */
+  }
+  
+  .card-container .card {
+    margin: 8px; /* Margin around each card */
+    flex: 1 1 200px; /* Flex properties to ensure responsiveness */
+    max-width: 220px; /* Set a maximum width for cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects */
+  }
+  
+  .wishlist {
+    width: 100vw; /* Full viewport width */
+  }
+  
+  .addProduct {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    font-size: 25px;
+    width: 45px;
+    border-radius: 2.5rem;
+    font-weight: bold;
+    background-color: #F13AB1;
+    color: white;
+    padding: 10px;
+    
+    z-index: 1000; /* Ensure the button appears above other content */
+    border: none; /* Ensure no border */
+    cursor: pointer; /* Pointer cursor */
+  }
+
+  .total-cart-value{
+    text-align: center;
+    color: #5A5A5A;
+  }
+  .shareButton{
+    position: fixed;
+    bottom: 80px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    font-size: 25px;
+    width: 45px;
+    border-radius: 2.5rem;
+    font-weight: bold;
+    background-color: #F13AB1;
+    color: white;
+    padding: 10px;
+    
+    z-index: 1000; /* Ensure the button appears above other content */
+    border: none; /* Ensure no border */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  @media (max-width: 500px) {
+    .card-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .card-container .card {
+      flex: 1 1 150px; /* Adjust card size for smaller screens */
+      max-width: 150px; /* Adjust maximum width for smaller screens */
+    }
+  
+    .addProduct {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      padding: 8px; /* Adjust padding for smaller screens */
+    }
+  }
+  

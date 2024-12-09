@@ -1,0 +1,170 @@
+/* .navbar {
+    
+   color: #F13AB1; 
+   padding: 0 20px; 
+   background-color: #fff;
+   border-bottom: 0.1px solid #F2F2F2;
+ }
+ 
+ .navbar nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .list ul{
+   display: flex;
+   text-decoration: none !important;
+ }
+ .Links{
+   text-decoration: none;
+ }
+ 
+ .list ul li{
+   list-style-type: none;
+   margin-right: 20px;
+   font-size: 16px;
+   text-decoration: none !important;
+   color: #666666;
+   text-transform: uppercase;
+ }
+ .menu-icon {
+   display: none;
+ }
+
+ 
+ @media (max-width: 556px) {
+   .list ul {
+     display: none;
+   }
+ 
+   .navbar {
+     position: relative;
+   }
+ 
+   .menu-icon {
+     display: block;
+     cursor: pointer;
+     color: black;
+     margin-left: auto;
+     
+   }
+ 
+   .navbar.expanded .list {
+     display: block;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #fff;
+     width: 100%;
+     text-align: left;
+     height: 100vh;
+   }
+ 
+   .navbar.expanded .list ul {
+     display: block;
+     justify-content: space-between;
+   }
+
+   
+ 
+   .navbar.expanded .list ul li {
+     padding: 1rem;
+     list-style-type: none;
+     text-decoration: none;
+   }
+ } */
+
+ /* Default Navbar styles */
+
+ /* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+
+/* .logo h2 {
+    font-family: 'Playwrite AR', sans-serif;
+    font-size: 22px;
+} */
+
+.navbar {
+  color: #F13AB1; /* Text color */
+  padding: 0 20px; /* Padding inside the navbar */
+  background-color: #fff;
+  border-bottom: 0.1px solid #F2F2F2;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list ul li a {
+  text-decoration: none;
+  /* color: #666666;  */
+}
+
+
+
+.list ul li {
+  margin-right: 20px;
+  font-size: 16px;
+  text-decoration: none !important;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+Link li{
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Styles for when the screen width is 556px or less */
+@media (max-width: 556px) {
+  .list ul {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: black;
+    margin-left: auto;
+  }
+
+  .navbar.expanded .list {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    height: 100vh;
+    padding-top: 20px;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .navbar.expanded .list ul {
+    display: block;
+    flex-direction: column;
+  }
+
+  .navbar.expanded .list ul li {
+    padding: 1rem;
+    list-style-type: none;
+  }
+}

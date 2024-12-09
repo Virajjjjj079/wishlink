@@ -1,0 +1,42 @@
+.hero-section{
+    padding: 20px;
+    
+}
+
+.heromain{
+    
+    color: #F13AB1;
+}
+
+.container{
+    padding-top: 20px;
+margin-top: 20vmin;
+}
+
+.herospan{
+    color: #666666;
+       
+}
+
+.points{
+    list-style: circle;
+   text-align: start;
+}
+
+.try{
+    background-color: #F13AB1;
+    color: white;
+    font-style: italic;
+    font-size: 18ox;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+body {
+    border: none;
+  }
+
+  .section{
+    margin-bottom: 10vh;
+  }

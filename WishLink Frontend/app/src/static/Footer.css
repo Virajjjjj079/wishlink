@@ -1,0 +1,41 @@
+footer {
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  footer ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .social-media {
+    margin-top: 10px;
+  }
+  
+  footer .social-media img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 12px;
+  }

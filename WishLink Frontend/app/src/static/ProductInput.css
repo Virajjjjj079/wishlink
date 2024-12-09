@@ -1,0 +1,82 @@
+input{
+
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* styles.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  /* ... other styles */
+  
+  input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 0.3rem;
+    width: 200px;
+  }
+  .button{
+    padding: 5px;
+    width: 15vmin;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    color: white;
+    background-color: #F13AB1;
+    font-style: italic;
+  }
+
+  .similar{
+    text-align: center;
+  }
+  
+@media screen and (max-width:500px) {
+  .button{
+    padding: 5px;
+    width: 25vmin;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    color: white;
+    background-color: #F13AB1;
+    font-style: italic;
+  }
+}
+  
+  
+  
+  
+  /* styles.css or Card.css */
+/* loader css */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+}
+  .loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

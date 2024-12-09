@@ -1,0 +1,120 @@
+.product-page {
+    padding: 20px;
+  }
+  
+  .product-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+   
+  }
+  
+  .product-img {
+    /* max-width: 270px; 
+    width: 100%;
+    height: 100%;
+    max-height: 390px; */
+    width: 270px;
+    height: 360px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    margin-right: 10vw;
+  }
+  
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 15vh;
+  }
+  
+  .product-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .buy-now-button,
+  .back-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #e12291;
+    background-color: lightgray;
+    color: #555;
+    border-radius: 5px;
+  }
+  
+  
+  .buy-now-button:hover {
+    background-color: #e12291;
+    color: white;
+  }
+  
+  .back-button:hover {
+    background-color: #e12291;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-info {
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .product-img {
+      max-width: 300px;
+      width: 100%;
+      height: 100%;
+      max-height: 350px;
+      
+      object-fit: cover;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+      margin: 0; /* Removes margin to center the image */
+    }
+  
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 20px; /* Adjusts margin for better spacing on smaller screens */
+    }
+  
+    .product-buttons {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px; /* Adds some spacing above the buttons */
+    }
+  
+    .buy-now-button,
+    .back-button {
+      width: 90%; /* Sets button width to 90% to keep them visually consistent */
+    }
+  }
+  
